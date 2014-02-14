@@ -1,0 +1,65 @@
+@CHARSET "ISO-8859-1";
+html,
+body,
+#Mapa{
+	padding:0;
+	margin:0;
+	height:100%;
+	width:100%;
+	}
+#divBorderContainer{
+	width:100%;
+	height:100%;
+	margin:0;
+	botton:5px
+	}
+#ButtonCoor{
+	position:absolute;
+	left:88%;
+	top:89%;
+	}
+#spnCoordinates{
+	position:absolute;
+	left:79%;
+	top:94%;
+	color:#000;
+	z-index:50;
+	}
+#divContentPane{
+	width:380px;
+	height:280px;
+	overflow:auto;
+	}
+#divInSpan{
+	position:absolute;
+	right:20px;
+	top:.6cm;
+	z-Index:999;
+	}
+#divBuscar{
+	display:block;
+	position:absolute;
+	z-index:2;
+	top:20px;
+	left:74px;
+	}
+#divGalleryMaps{
+	position:absolute;
+	right:90%;
+	top:1cm;
+	z_index:999;
+	}
+#divSliderBar{
+	position:absolute;
+	top:20%;
+	left:3%;
+	}
+#olValues{
+	width:1em;
+	font-size:75%;
+	font-weight:bold;
+	color:#006699;
+	}
+#divLabRule{
+	width:5px;
+	}

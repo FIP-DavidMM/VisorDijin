@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=7,IE=9, IE=10">
+    	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Coordenadas Delito</title>
+		<link rel="stylesheet" href="http://js.arcgis.com/3.7/js/esri/css/esri.css">
+		<link rel="stylesheet" href="http://js.arcgis.com/3.7/js/dojo/dijit/themes/claro/claro.css">
+		<link rel="shortcut icon" type="image/vnd.microft.icon" href="images/ponal.ico"/>
+		<link rel="stylesheet" href="CCS/Styles.css" type="text/css">
+		<script>var dojoConfig = { parseOnLoad: true };</script>
+		<script src="http://js.arcgis.com/3.7/"></script>
+		<script type="text/javascript" src="resources/visor.js"></script>
+	</head>
+	 	<body class="claro">
+		<div id="divBorderContainer" data-dojo-type="dijit/layout/BorderContainer" 
+			 data-dojo-props="design:'headline', gutters:false">
+			<div id="divMap" data-dojo-type="dijit/layout/ContentPane"
+				           data-dojo-props="region:'center'">
+				 <!-- Coordinates on map-->
+				<span id="spnCoordinates"></span>
+					<div id="divInSpan">
+					<div data-dojo-type="dijit/TitlePane"
+					 data-dojo-props="title:'Cambiar Mapa Base', closable:false, open:false">
+				 		<div id="divContentPane" data-dojo-type="dijit/layout/ContentPane">
+				 			<div id=divBaseMapGallery></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button id="ButtonCoor" type="button" onClick="onButtonOKClick()">Enviar Información</button>
+		<div id="divBuscar"></div>
+		<div id="divSliderBar">
+			<div id="divLabRule" data-dojo-type="dijit.form.VerticalRule" container="leftDecoration" count=3></div>
+			<ol id="olValues" data-dojo-type="dijit.form.VerticalRuleLabels" container="leftDecoration">
+				<li>0%</li>
+				<li>50%</li>
+				<li>100%</li>
+			</ol>
+		</div>
+ 	</body>
+</html>
